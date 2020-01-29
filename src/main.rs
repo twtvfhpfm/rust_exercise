@@ -5,6 +5,7 @@ mod vec_;
 mod hashmap;
 mod file;
 mod generic;
+mod ref_;
 pub fn main()
 {
   //string::string_test();
@@ -17,6 +18,7 @@ pub fn main()
   hashmap::character_statistics();
   //file::file_test();
   generic::test();
+  ref_::ref_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -36,4 +38,19 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     }
   }
   vec![]
+}
+
+#[cfg(test)]
+mod tests{
+  use super::*;
+
+  #[test]
+  #[should_panic]
+  fn add()
+  {
+    ref_::ref_test();
+
+    assert_eq!(2+3, 5);
+    panic!("test fail");
+  }
 }
