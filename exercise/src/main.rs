@@ -6,6 +6,8 @@ mod hashmap;
 mod file;
 mod generic;
 mod ref_;
+use crate::string::string_test;
+mod closure;
 pub fn main()
 {
   //string::string_test();
@@ -19,6 +21,9 @@ pub fn main()
   //file::file_test();
   generic::test();
   ref_::ref_test();
+  hello_world::aaa();
+  string_test();
+  closure::closure_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
