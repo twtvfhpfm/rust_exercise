@@ -8,6 +8,7 @@ mod generic;
 mod ref_;
 use crate::string::string_test;
 mod closure;
+mod iter;
 pub fn main()
 {
   //string::string_test();
@@ -24,6 +25,7 @@ pub fn main()
   hello_world::aaa();
   string_test();
   closure::closure_test();
+  iter::iter_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
