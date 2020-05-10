@@ -10,6 +10,7 @@ use crate::string::string_test;
 mod closure;
 mod iter;
 mod box_;
+mod rc_;
 pub fn main()
 {
   //string::string_test();
@@ -28,6 +29,7 @@ pub fn main()
   closure::closure_test();
   iter::iter_test();
   box_::box_test();
+  rc_::rc_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
