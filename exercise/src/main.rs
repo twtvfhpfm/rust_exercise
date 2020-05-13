@@ -11,6 +11,10 @@ mod closure;
 mod iter;
 mod box_;
 mod rc_;
+mod refcell_;
+mod thread_;
+mod message;
+
 pub fn main()
 {
   //string::string_test();
@@ -30,6 +34,9 @@ pub fn main()
   iter::iter_test();
   box_::box_test();
   rc_::rc_test();
+  refcell_::refcell_test();
+  thread_::thread_test();
+  message::message_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
