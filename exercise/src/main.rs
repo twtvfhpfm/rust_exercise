@@ -14,6 +14,7 @@ mod rc_;
 mod refcell_;
 mod thread_;
 mod message;
+mod mutex_;
 
 pub fn main()
 {
@@ -37,6 +38,7 @@ pub fn main()
   refcell_::refcell_test();
   thread_::thread_test();
   message::message_test();
+  mutex_::mutex_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
