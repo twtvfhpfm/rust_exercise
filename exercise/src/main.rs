@@ -16,6 +16,7 @@ mod thread_;
 mod message;
 mod mutex_;
 mod trait_;
+mod display;
 
 pub fn main()
 {
@@ -41,6 +42,7 @@ pub fn main()
   message::message_test();
   mutex_::mutex_test();
   trait_::trait_test();
+  display::display_test();
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
