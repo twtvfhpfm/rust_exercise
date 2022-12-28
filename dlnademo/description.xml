@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+</specVersion>
+<device>
+	<deviceType>urn:schemas-upnp-org:device:MediaRenderer:1</deviceType>
+	<friendlyName>rust dlna</friendlyName>
+	<manufacturer>twt</manufacturer>
+	<manufacturerURL>http://www.dangbei.com/</manufacturerURL>
+	<modelDescription>rust dlna v1</modelDescription>
+	<modelName>rust dlna MediaRenderer</modelName>
+	<modelNumber>1</modelNumber>
+	<modelURL>http://www.dangbei.com/</modelURL>
+	<UDN>uuid:{uuid}</UDN>
+	<dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMR-1.50</dlna:X_DLNADOC>
+	<dlna:X_DLNACAP xmlns:dlna="urn:schemas-dlna-org:device-1-0">av-upload,audio-upload</dlna:X_DLNACAP>
+	<serviceList>
+		<service>
+			<serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+			<serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+			<SCPDURL>/upnp/AVTransport/desc</SCPDURL>
+			<controlURL>/upnp/AVTransport/action</controlURL>
+			<eventSubURL>/upnp/AVTransport/event</eventSubURL>
+			</service>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+				<SCPDURL>/upnp/RenderingControl/desc</SCPDURL>
+				<controlURL>/upnp/RenderingControl/action</controlURL>
+				<eventSubURL>/upnp/RenderingControl/event</eventSubURL>
+</service><service><serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+<SCPDURL>/upnp/ConnectionManager/desc</SCPDURL>
+<controlURL>/upnp/ConnectionManager/action</controlURL>
+<eventSubURL>/upnp/ConnectionManager/event</eventSubURL></service></serviceList>
+</device>
+</root>
